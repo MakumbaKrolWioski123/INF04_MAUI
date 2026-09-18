@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage1"
+             Title="Zadanie 2.3">
+    <VerticalStackLayout Spacing="10">
+        <Label 
+            Text="Kalkulator powitań"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Large"/>
+        <Entry
+             x:Name="Miasto_Entry"
+             Placeholder="Wprowadz miasto:"
+             HorizontalOptions="Center"
+             WidthRequest="300"
+            />
+        <Entry
+             x:Name="Imie_Entry"
+             Placeholder="Wprowadz imie:"
+             HorizontalOptions="Center"
+             WidthRequest="300"
+             />
+        <Button
+            x:Name="Pokaż"
+            Clicked="Pokaż_Clicked"
+            Text="Pokaż"
+            />
+        <Label
+            x:Name="Powitanie"
+            Text=""
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="Medium"
+            FontAttributes="Bold"
+            />
+    </VerticalStackLayout>
+</ContentPage>
