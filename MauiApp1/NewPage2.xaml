@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage2"
+             Title="Zadanie 3.3">
+    <VerticalStackLayout HorizontalOptions="Center" WidthRequest="600">
+        <Label Text="Formularz" HorizontalOptions="Center" FontSize="Header"/>
+        <Grid ColumnDefinitions="auto,auto" RowDefinitions="auto,auto,auto,auto" ColumnSpacing="10" RowSpacing="10" HorizontalOptions="Center">
+            <Label
+                Text="Produkt"
+                FontSize="Medium"
+                Grid.Row="0"
+                Grid.Column="0"/>
+            <Label
+                Text="Ilosc"
+                FontSize="Medium"
+                Grid.Row="1"
+                Grid.Column="0"/>
+            <Label
+                Text="Adres dostawy"
+                FontSize="Medium"
+                Grid.Row="2"
+                Grid.Column="0"/>
+            <Entry
+                x:Name="Produkt"
+                Placeholder="Podaj nazwe produktu"
+                Grid.Column="1"
+                Grid.Row="0"/>
+            <Entry
+                x:Name="Ilosc"
+                Placeholder="Podaj ilosc"
+                Grid.Column="1"
+                Grid.Row="1"/>
+            <Entry
+                x:Name="Adres"
+                Placeholder="Podaj adres dostawy"
+                Grid.Column="1"
+                Grid.Row="2"/>
+            <Button
+                x:Name="Zamowienie"
+                Text="Złoż zamówienie"
+                FontSize="Large"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Clicked="Zamowienie_Clicked"
+                />
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>
