@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage3"
+             Title="Zadanie4.3">
+    <VerticalStackLayout WidthRequest="300" HorizontalOptions="Center" Spacing="10">
+        <Label 
+            Text="Formularz"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Large"/>
+        
+        <Entry
+            x:Name="Imie"
+            Placeholder="Podaj imie"/>
+        
+        <Entry
+            x:Name="Nazwisko"
+            Placeholder="Podaj nazwisko"/>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Posiadam podstawową wiedzę" VerticalOptions="Center"/>
+            <CheckBox x:Name="Wiedza"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Chce otrzymać certyfikat" VerticalOptions="Center"/>
+            <Switch x:Name="Certyfikat"/>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout Spacing="10" RadioButtonGroup.GroupName="Kursy" x:Name="Kursy1">
+            <RadioButton Content="Stacjonarny" Value="Stacjonarny" x:Name="Radio1" />
+            <RadioButton Content="Online" Value="Online" x:Name="Radio2" />
+            <RadioButton Content="Hybrydowy" Value="Hybrydowy" x:Name="Radio3" />
+        </HorizontalStackLayout>
+        
+        <Editor Placeholder="Wpisz tutaj swoje oczekiwania" x:Name="Oczekiwania"/>
+        <Button x:Name="Zapisz" Text="Zapisz się" Clicked="Zapisz_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
