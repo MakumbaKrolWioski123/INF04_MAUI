@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage4"
+             Title="Zadanie 5.3">
+    <VerticalStackLayout WidthRequest="600" HorizontalOptions="Center">
+        <Label 
+            Text="Panel Rezerwacji"
+            FontSize="Header"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Picker x:Name="Sale">
+            <Picker.Items>
+                <x:String>Sala A</x:String>
+                <x:String>Sala B</x:String>
+                <x:String>Sala C</x:String>
+            </Picker.Items>
+        </Picker>
+        <HorizontalStackLayout HorizontalOptions="Center">
+        <Stepper Value="1" x:Name="Osoby" Minimum="1" Maximum="50" WidthRequest="200" ValueChanged="Osoby_ValueChanged"/>
+        <Label x:Name="Label_Osoby" FontSize="Large" Text="Liczba osób: 1" />
+        </HorizontalStackLayout>
+        <DatePicker x:Name="PickerDaty" Format="yyyy-MM-dd"/>
+        <Button TextColor="Black" x:Name="Rezerwacja" Text="Zarezerwuj" BackgroundColor="LightBlue" Clicked="Rezerwacja_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
