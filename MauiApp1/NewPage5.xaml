@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage5"
+             Title="Zadanie 6.3">
+    <VerticalStackLayout Spacing="20">
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+        <Button Text="Plus" FontSize="Large" x:Name="Plus" Clicked="Plus_Clicked"/>
+        <Button Text="Minus" FontSize="Large" x:Name="Minus" Clicked="Minus_Clicked"/>
+        <Button Text="Zeruj" FontSize="Large" x:Name="Zeruj" Clicked="Zeruj_Clicked"/>
+        </HorizontalStackLayout>
+        <Label Text="0" x:Name="Liczba_Label" FontSize="Large" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
