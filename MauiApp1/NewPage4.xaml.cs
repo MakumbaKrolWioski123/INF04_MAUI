@@ -24,12 +24,12 @@ public partial class NewPage4 : ContentPage
         }
         else
         {
-           sala = Sale.SelectedItem.ToString() ?? "Nie wybrano sali";
+           sala = Sale.SelectedItem.ToString();
 
 
-            if (sala == "Nie wybrano sali")
+            if (Sale.SelectedIndex==-1)
             {
-                DisplayAlert("Alert", $"{sala}", "OK");
+                DisplayAlert("Alert", $"Nie wybrano sali", "OK");
             }
             else
             {
