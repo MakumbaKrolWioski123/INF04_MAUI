@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage7"
+             Title="NewPage7">
+    <VerticalStackLayout WidthRequest="600" Spacing="10" HorizontalOptions="Center">
+        <Entry x:Name="szerkokoscEntry" Placeholder="Szerkokosc" />
+        <Entry x:Name="wysokoscEntry" Placeholder="Wysokosc" />
+        <Label x:Name="wynikLabel" Text="Wynik:" />
+        <Button Text="Oblicz" Clicked="ObliczButton_Clicked" />
+        <Button Text="Wyczyść" Clicked="WyczyśćButton_Clicked" />
+    </VerticalStackLayout>  
+</ContentPage>
