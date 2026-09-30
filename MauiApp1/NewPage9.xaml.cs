@@ -17,8 +17,6 @@ public partial class NewPage9 : ContentPage
         string G = cyfra_G.ToString("X2");
         string B = cyfra_B.ToString("X2");
 
-        
-
         suwakLabel.Text = "#" + R + G + B;
     }
 
