@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage9"
+             Title="NewPage9">
+    <VerticalStackLayout WidthRequest="600" Spacing="10" HorizontalOptions="Center" x:Name="Strona">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Slider Minimum="0" Maximum="255" ValueChanged="Slider_ValueChanged" x:Name="Slider_Koloru" WidthRequest="400" HorizontalOptions="Center"/>
+            <Label Text="" x:Name="suwakLabel"/>
+        </HorizontalStackLayout>
+        <Button Text="Zastosuj jako szarość" x:Name="zmienKolorButton" Clicked="zmienKolorButton_Clicked" WidthRequest="300" />
+    </VerticalStackLayout>
+</ContentPage>
