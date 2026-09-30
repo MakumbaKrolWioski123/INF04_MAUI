@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage10"
+             Title="Wzornik kolorów RGB" BackgroundColor="Cornsilk">
+    <VerticalStackLayout HorizontalOptions="Center" WidthRequest="600" Spacing="10" BackgroundColor="White">
+        <Label Text="Dobierz kolor suwakami i zapisz"/>
+        <Rectangle x:Name="Kolor_Rectangle" WidthRequest="400" HeightRequest="100" Fill="White" Stroke="Black" StrokeThickness="2"/>
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="R:" FontSize="Large" VerticalOptions="Center" x:Name="LabelDrugi_R"/>
+            <Slider WidthRequest="300" Minimum="0" Maximum="255" x:Name="Slider_R" VerticalOptions="Center" ValueChanged="Slider_ValueChanged" Value="255"/>
+            <Label Text="255" FontSize="Large" x:Name="Label_R"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="G:" FontSize="Large" VerticalOptions="Center" x:Name="LabelDrugi_G"/>
+            <Slider WidthRequest="300" Minimum="0" Maximum="255" x:Name="Slider_G" VerticalOptions="Center" ValueChanged="Slider_ValueChanged" Value="255"/>
+            <Label Text="255" FontSize="Large" x:Name="Label_G"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="B:" FontSize="Large" VerticalOptions="Center" x:Name="LabelDrugi_B"/>
+            <Slider WidthRequest="300" Minimum="0" Maximum="255" x:Name="Slider_B" VerticalOptions="Center" ValueChanged="Slider_ValueChanged" Value="255"/>
+            <Label Text="255" FontSize="Large" x:Name="Label_B"/>
+        </HorizontalStackLayout>
+        <Button Text="Pobierz" BackgroundColor="Peru" Clicked="PobierzButton_Clicked"/>
+        <Label FontSize="Large" x:Name="Kolor_Label" Text="#FFFFFF" WidthRequest="400" HorizontalTextAlignment="Center"/>
+        <Rectangle x:Name="DrugiKolor_Rectangle" WidthRequest="300" HeightRequest="75" Fill="White" Stroke="Black" StrokeThickness="2"/>
+         <Label Text="Lista Kolorów:" FontSize="Large" VerticalOptions="Center" x:Name="Label_Lista_Kolorów"/>
+    </VerticalStackLayout>
+</ContentPage>
